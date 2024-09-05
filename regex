@@ -1,0 +1,42 @@
+# Ad servers and services
+/^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
+/^(.+[_.-])?ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/
+/^adim(age|g)s?[0-9]*[_.-]/
+/^adtrack(er|ing)?[0-9]*[_.-]/
+/^advert(s|is(ing|ements?))?[0-9]*[_.-]/
+
+# Affiliate and marketing
+/^aff(iliat(es?|ion))?[_.-]/
+/^marketing[_.-]/
+/^promo(tion)?s?[_.-]/
+
+# Analytics and tracking
+/^(.+[_.-])?telemetry[_.-]/
+/^analytics?[_.-]/
+/^stats?[_.-]/
+/^pixel[_.-]/
+/^count(ers?)?[0-9]*[_.-]/
+/^beacons?[0-9]*[_.-]/
+
+# Specific ad-related patterns
+/^banners?[_.-]/
+/^mads\./
+
+# Additional patterns for broader coverage
+/^tracking[_.-]/
+/^metrics?\./
+/^stat(s|istics)?[0-9]*[_.-]/
+/^clicks?[_.-]/
+/^log(ging|s)?[0-9]*[_.-]/
+/^events?\./
+/^conversion[_.-]/
+/^tag(ger|ging)?[_.-]/
+
+# Social media trackers
+/^social[_.-]?track(er|ing)?[_.-]/
+/^fb[_.-]?pixel/
+/^twitter[_.-]?analytics/
+
+# Mobile-specific patterns
+/^mobile[_.-]?ad[sxv]?/
+/^app[_.-]?metrics/
