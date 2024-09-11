@@ -40,3 +40,7 @@
 # Mobile-specific patterns
 /^mobile[_.-]?ad[sxv]?/
 /^app[_.-]?metrics/
+
+# IP logging and URL shortening services
+/^grabify[_.-]/
+/^iplogger[_.-]/
