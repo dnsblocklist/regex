@@ -1,46 +1,61 @@
-# Ad servers and services
-/^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
-/^(.+[_.-])?ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/
-/^adim(age|g)s?[0-9]*[_.-]/
-/^adtrack(er|ing)?[0-9]*[_.-]/
-/^advert(s|is(ing|ements?))?[0-9]*[_.-]/
+# Ad Servers and Services
+^(?:.*[_.-](?:ad(?:s|server(?:s)?|service(?:s)?|serving|system|network|manager|tracker)?))[^.[:space:]]*$/i
+^(?:.*[_.-](?:ad(?:s?|server|service|system|network|tracker|manager)?))[_.-]?[^.[:space:]]*$/i
+^ad(?:image|g(?:s?|[0-9]*))?[_.-]?/i
+^ad(?:track(?:er|ing)?|tracking)[0-9]*[_.-]?/i
+^advert(?:ising|isements?)[0-9]*[_.-]?/i
 
-# Affiliate and marketing
-/^aff(iliat(es?|ion))?[_.-]/
-/^marketing[_.-]/
-/^promo(tion)?s?[_.-]/
+# Affiliate and Marketing
+^aff(?:iliate(?:s?|ion)?|il(?:iates?|ion))?[_.-]?/i
+^marketing[_.-]?/i
+^promo(?:tion)?s?[_.-]?/i
+^campaign(?:s)?[_.-]?/i
+^affiliate[_.-]?network[_.-]?/i
 
-# Analytics and tracking
-/^(.+[_.-])?telemetry[_.-]/
-/^analytics?[_.-]/
-/^stats?[_.-]/
-/^pixel[_.-]/
-/^count(ers?)?[0-9]*[_.-]/
-/^beacons?[0-9]*[_.-]/
+# Analytics and Tracking
+^telemetry[_.-]?/i
+^analytics?[_.-]?/i
+^stats?[_.-]?/i
+^pixel[_.-]?/i
+^count(?:ers?|tracking)?[0-9]*[_.-]?/i
+^beacons?[0-9]*[_.-]?/i
+^event(?:s)?[_.-]?/i
+^conversion[_.-]?/i
 
-# Specific ad-related patterns
-/^banners?[_.-]/
-/^mads\./
+# Specific Ad-Related Patterns
+^banner(?:s)?[_.-]?/i
+^mads[_.-]?/i
+^popup[_.-]?/i
+^interstitial[_.-]?/i
+^overlay[_.-]?/i
 
-# Additional patterns for broader coverage
-/^tracking[_.-]/
-/^metrics?\./
-/^stat(s|istics)?[0-9]*[_.-]/
-/^clicks?[_.-]/
-/^log(ging|s)?[0-9]*[_.-]/
-/^events?\./
-/^conversion[_.-]/
-/^tag(ger|ging)?[_.-]/
+# Broader Coverage
+^tracking[_.-]?/i
+^metrics?[_.-]?/i
+^stat(?:s|istics)?[0-9]*[_.-]?/i
+^click(?:s)?[_.-]?/i
+^log(?:ging|s)?[0-9]*[_.-]?/i
+^tag(?:ger|ging)?[_.-]?/i
+^activity[_.-]?log[_.-]?/i
+^data[_.-]?collection[_.-]?/i
 
-# Social media trackers
-/^social[_.-]?track(er|ing)?[_.-]/
-/^fb[_.-]?pixel/
-/^twitter[_.-]?analytics/
+# Social Media Trackers
+^social(?:[_.-]?tracking?)?[_.-]?/i
+^fb[_.-]?pixel[_.-]?/i
+^twitter[_.-]?analytics[_.-]?/i
+^instagram[_.-]?pixel[_.-]?/i
+^linkedin[_.-]?analytics[_.-]?/i
+^social[_.-]?media[_.-]?analytics[_.-]?/i
 
-# Mobile-specific patterns
-/^mobile[_.-]?ad[sxv]?/
-/^app[_.-]?metrics/
+# Mobile-Specific Patterns
+^mobile[_.-]?ad(?:[sxv])?[_.-]?/i
+^app[_.-]?metrics[_.-]?/i
+^mobile[_.-]?tracking[_.-]?/i
+^in-app[_.-]?tracking[_.-]?/i
 
-# IP logging and URL shortening services
-/^grabify[_.-]/
-/^iplogger[_.-]/
+# IP Logging and URL Shortening Services
+^grabify[_.-]?/i
+^iplogger[_.-]?/i
+^short(?:en|en(?:er)?)[_.-]?/i
+^url(?:short|shrtn)?[_.-]?/i
+^link(?:shortener)?[_.-]?/i
