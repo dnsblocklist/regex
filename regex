@@ -59,3 +59,16 @@
 ^short(?:en|en(?:er)?)[_.-]?/i
 ^url(?:short|shrtn)?[_.-]?/i
 ^link(?:shortener)?[_.-]?/i
+
+# Fingerprinting
+^fingerprint(?:ing)?[_.-]?/i
+^browser[_.-]?fingerprint[_.-]?/i
+^device[_.-]?fingerprint[_.-]?/i
+^fp[_.-]?track(?:ing)?[_.-]?/i
+
+# Crypto Mining
+^cryptominer[_.-]?/i
+^cryptocurrency[_.-]?min(?:ing|er)?[_.-]?/i
+^miner(?:s)?[_.-]?crypto[_.-]?/i
+^mining(?:-cryptocurrency)?[_.-]?/i
+^coin(?:-)?miner[_.-]?/i
